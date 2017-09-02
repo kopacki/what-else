@@ -1,7 +1,13 @@
 {
   "dependencies": {
-    "next": "^3.2.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "next": "3.2.1",
+    "prop-types": "15.5.10",
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  },
+  "scripts": {
+    "dev": "next -p 3003",
+    "build": "next build",
+    "start": "next start -p 3003"
   }
 }
