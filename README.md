@@ -4,6 +4,7 @@ Let's start with something easy and simple. What about writing an own blog platf
 
 Features:
 * let's have some content presented as a list of posts (yeah, mock them all for now 😎)
+* almost forgot, try to go with TDD 🤖
 
 Tech stack:
 * React 💪🏻 (it had to be easy and simple, remember?)
