@@ -1,5 +1,9 @@
 import { PureComponent } from 'react';
 import List from '../../components/Posts/List';
+const DynamicComponentWithNoSSR = dynamic(
+  import('./Embedded/ga'),
+  { ssr: false }
+)
 
 export default class Posts extends PureComponent {
   state = {
