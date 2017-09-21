@@ -1,9 +1,5 @@
 import { PureComponent } from 'react';
-import List from '../../components/Posts/List';
-const DynamicComponentWithNoSSR = dynamic(
-  import('./Embedded/ga'),
-  { ssr: false }
-)
+import List from '../../components/Post/List';
 
 export default class Posts extends PureComponent {
   state = {
@@ -47,10 +43,13 @@ export default class Posts extends PureComponent {
 
   render() {
     const { posts } = this.state;
+    const { children } = this.props;
+
     return (
       <div>
         <strong>Hello World {this.props.userAgent}</strong>
         <List posts={posts} />
+        {children}
       </div>
     );
   }
